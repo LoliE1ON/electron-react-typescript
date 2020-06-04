@@ -8,7 +8,7 @@ Electron boilerplate with React and Typescript
 
 `dev` - Run application in dev mode
 
-`build` - Creating a portable application package
+`package` - Creating a portable application package
 
 `make` - Create installation file of you application
 
