@@ -1,4 +1,3 @@
-import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
@@ -10,15 +9,12 @@ const isProd = process.env.NODE_ENV === 'production';
 const extensions = ['.js', '.ts', '.tsx'];
 
 export default {
-  input: 'src/rendererProcess/index.tsx',
+  input: 'src/renderer/index.tsx',
   output: {
     file: 'public/index.js',
     format: 'iife',
   },
   plugins: [
-    replace({
-      'process.env.NODE_ENV': JSON.stringify(isProd ? 'production' : 'development'),
-    }),
     resolve({
       extensions,
     }),
@@ -52,7 +48,7 @@ export default {
     }),
     html({
       fileName: 'index.html',
-      title: 'Rollup + TypeScript + React = ❤️',
+      title: 'Application title',
       template: ({ title }) => {
         return `
           <!DOCTYPE html>

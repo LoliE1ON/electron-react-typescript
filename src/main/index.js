@@ -10,8 +10,8 @@ invokeCommandsMap.forEach((command) =>
 const isDevelopment = process.env.NODE_ENV === "development";
 
 if (isDevelopment) {
-    require("electron-reload")("../", {
-        electron: path.join(__dirname, "../node_modules", ".bin", "electron"),
+    require("electron-reload")(path.join(__dirname, "../../public"), {
+        electron: path.join(__dirname, "../../node_modules", ".bin", "electron"),
         awaitWriteFinish: true,
     });
 }
