@@ -1,4 +1,4 @@
-# Electron React&Typescript
+# Electron React & Redux (Saga) & Typescript
 
 Electron boilerplate with React and Typescript
 

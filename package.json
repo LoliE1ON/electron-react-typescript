@@ -1,9 +1,9 @@
 {
   "private": true,
   "name": "electron-react-typescript",
-  "productName": "Application name",
+  "productName": "Electron with React & TypeScript",
   "version": "1.0.0",
-  "repository": "https://github.com/LoliE1ON/sftp-client.git",
+  "repository": "https://github.com/LoliE1ON/electron-react-typescript.git",
   "author": {
     "name": "E1ON",
     "email": "trohimovkavad@gmail.com"
@@ -54,9 +54,18 @@
     }
   },
   "dependencies": {
+    "@types/react-redux": "^7.1.9",
+    "@types/redux": "^3.6.0",
+    "@types/redux-logger": "^3.0.8",
+    "@types/redux-saga": "^0.10.5",
     "electron-reload": "^1.5.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
